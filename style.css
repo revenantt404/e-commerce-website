@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+section header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+section header .logo{
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+section header .logo span{
+    color: #f9004d;
+}
+
+section header ul{
+    list-style: none;
+}
+
+section header ul li{
+    display: inline-block;
+    margin: 5px 5px;
+    padding: 5px 20px;
+}
+
+section header ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+section header ul li a:hover{
+    color: #fb6966;
+}
+
+section header p{
+    cursor: pointer;
+    padding: 10px 25px;
+    border: 1px solid #fb6966;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+section header p:hover{
+    color: white;
+    background: #f9004d;
+}
+
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fcb3ac;
+    clip-path: circle(320px at left -230px);
+    z-index: -1;
+}
+
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fb6966;
+    clip-path: circle(250px at right 900px);
+    z-index: -1;
+}
+
+section .texts h1{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-size: 100px;
+    color: black;
+}
+
+section .texts h1 span{
+    color: #f9004d;
+}
+
+section .texts p{
+    width: 650px;
+    position: absolute;
+    top: 46%;
+    left: 10%;
+    line-height: 28px;
+    text-align: justify;
+}
+
+section .background_image img{
+    width: 750px;
+    position: absolute;
+    top: 25%;
+    left: 47%;
+    margin-left: 25px;
+    transition: 1s;
+}
+
+section .btn{
+    position: relative;
+    top: 60%;
+    left: 9%;
+    width: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+
+section .btn .read{
+    background: #fb6966;
+    color: white;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+section .btn p{
+    padding: 10px 25px;
+    background: none;
+    border: 2px solid #fb6966;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.background_image img:hover{
+    transform:scale(1.15);
+    z-index: 100;
+}
